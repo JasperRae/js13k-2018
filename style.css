@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    background: #cbe5e5;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+
+#top-menu {
+    position: fixed;
+    margin: 0;    
+    padding: .25em;
+    border-radius: 2px;
+}
+
+.menu-button {
+    background: #e4cbcb;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+    padding: .75em;
+    margin: .25em;
+    border: 1px outset white;
+    border-radius: 5px;
+}
+
+.menu-button:hover {
+    border: 1px inset #874545;
+    cursor: pointer;
+}
+
+.menu-window {
+    display: none;
+    margin-top: 5em;
+    border: 1px solid black;
+    padding: .25em;
+    width: 95%;
+    max-width: 800px;
+}
