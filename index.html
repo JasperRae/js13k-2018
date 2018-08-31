@@ -9,27 +9,35 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body>
+<body onload="startUp()">
+
     <ol id="top-menu" class="menu">
         <li id="home" class="menu-button" onclick="toggleMenu(this.id)">Home</li>
         <li id="work" class="menu-button" onclick="toggleMenu(this.id)">Work</li>
-        <li id="shop" class="menu-button" onclick="toggleMenu(this.id)">Shop</li>
+        <li id="buy" class="menu-button" onclick="toggleMenu(this.id)">Buy</li>
         <li id="school" class="menu-button" onclick="toggleMenu(this.id)">School</li>
         <li id="create" class="menu-button" onclick="toggleMenu(this.id)">Create</li>
-        <li id="business" class="menu-button" onclick="toggleMenu(this.id)">Business</li>
+        <li id="sell" class="menu-button" onclick="toggleMenu(this.id)">Sell</li>
         <li id="bank" class="menu-button" onclick="toggleMenu(this.id)">Bank</li>
     </ol>
 
+    <div id="stat-bar">
+        <h3 class="barTitle">Energy</h3> <meter id="energy-bar" class="bar" value="20" max="100" low="25"></meter> 
+        <h3 class="barTitle">Hunger</h3> <meter id="hunger-bar" class="bar" value="50" max="100" low="25"></meter>
+    </div>
+
     <div id="home-window" class="menu-window">
         <h1>Home</h1>
+        <button class="food" value="10" onclick="updateStats(this.value, this)">Eat</button>
+        <button class="energy" value="10" onclick="updateStats(this.value, this)">Sleep</button>
     </div>
 
     <div id="work-window" class="menu-window">
         <h1>Work</h1>
     </div>
 
-    <div id="shop-window" class="menu-window">
-        <h1>Shop</h1>
+    <div id="buy-window" class="menu-window">
+        <h1>Buy</h1>
     </div>
 
     <div id="school-window" class="menu-window">
@@ -40,14 +48,13 @@
         <h1>Create</h1>
     </div>
 
-    <div id="business-window" class="menu-window">
-        <h1>Business</h1>
+    <div id="sell-window" class="menu-window">
+        <h1>Sell</h1>
     </div>
 
     <div id="bank-window" class="menu-window">
         <h1>Bank</h1>
     </div>
-
 </body>
 
 </html>

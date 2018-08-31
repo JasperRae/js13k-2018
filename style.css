@@ -5,13 +5,36 @@ body {
     box-sizing: border-box;
     justify-content: center;
     text-align: center;
+    user-select: none;
+}
+
+#top-menu, #stat-bar {
+    position: fixed;
+    z-index: 99;
+    min-width: 800px;
 }
 
 #top-menu {
-    position: fixed;
-    margin: 0;    
+    top: 0;
+    margin: .5em;    
     padding: .25em;
     border-radius: 2px;
+}
+
+#stat-bar {
+    top: 4em;
+}
+
+.bar {
+    height: .8em;
+    width: 10em;
+}
+
+.barTitle {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+    margin: .1em;
 }
 
 .menu-button {
@@ -33,9 +56,10 @@ body {
 
 .menu-window {
     display: none;
-    margin-top: 5em;
+    margin-top: 6em;
     border: 1px solid black;
     padding: .25em;
     width: 95%;
     max-width: 800px;
+    height: 600px;
 }
