@@ -9,9 +9,9 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body onload="startUp()">
-
+<body>
     <ol id="top-menu" class="menu">
+        <li id="start" class="menu-button" onclick="startUp()">Start</li>
         <li id="home" class="menu-button" onclick="toggleMenu(this.id)">Home</li>
         <li id="work" class="menu-button" onclick="toggleMenu(this.id)">Work</li>
         <li id="buy" class="menu-button" onclick="toggleMenu(this.id)">Buy</li>
@@ -22,18 +22,26 @@
     </ol>
 
     <div id="stat-bar">
-        <h3 class="barTitle">Energy</h3> <meter id="energy-bar" class="bar" value="20" max="100" low="25"></meter> 
-        <h3 class="barTitle">Hunger</h3> <meter id="hunger-bar" class="bar" value="50" max="100" low="25"></meter>
+        <h3 class="bar-title">Energy</h3> <meter id="energy-bar" class="bar" value="100" max="100" low="25"></meter> 
+        <h3 class="bar-title">Hunger</h3> <meter id="hunger-bar" class="bar" value="100" max="100" low="25"></meter> 
+        <br>
+        <h3 id="job-title">Unemployed ($0.00/hr)</h3>
+        <h3 id="wallet">Wallet: $0.00</h3>
     </div>
 
     <div id="home-window" class="menu-window">
         <h1>Home</h1>
+
+        <!--
         <button class="food" value="10" onclick="updateStats(this.value, this)">Eat</button>
         <button class="energy" value="10" onclick="updateStats(this.value, this)">Sleep</button>
+        -->
+
     </div>
 
     <div id="work-window" class="menu-window">
         <h1>Work</h1>
+        <!-- <button id="dishwasher" class="job" onclick="setJob(this)">Dishwasher ($11.25/hr)</button> -->
     </div>
 
     <div id="buy-window" class="menu-window">

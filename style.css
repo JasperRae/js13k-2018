@@ -30,11 +30,17 @@ body {
     width: 10em;
 }
 
-.barTitle {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: normal;
-    margin: .1em;
+.bar-title {
+    margin: .25em;
+}
+
+#job-title, #wallet, .bar-title {
+    display: inline;
+    font-size: .75em;
+}
+
+#job-title, #wallet {
+    margin: 1em;
 }
 
 .menu-button {
@@ -47,6 +53,11 @@ body {
     margin: .25em;
     border: 1px outset white;
     border-radius: 5px;
+}
+
+#start {
+    background: #2b5555;
+    color: white;
 }
 
 .menu-button:hover {
